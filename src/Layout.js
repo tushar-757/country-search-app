@@ -1,13 +1,21 @@
-import React, { useState } from "react";
+import React, { useState ,useEffect} from "react";
+import axios from "axios";
 import Container from "@material-ui/core/Container";
 import TextField from "@material-ui/core/TextField";
 import Autocomplete from "@material-ui/lab/Autocomplete";
-import "./styles.css";
+import "./App.css";
 
 export default function ComboBox() {
   const [url, seturl] = useState("");
   const [type, settype] = useState("");
   const [name, setname] = useState("");
+  const base_url='https://restcountries.eu/rest/v2/';
+  useEffect(()=>{
+    const fetch=async()=>{
+       await axios.base_url.get("/name/eesti");
+    }
+    fetch();
+  },[])
   return (
     <React.Fragment>
       <Container maxWidth="sm" className="container">

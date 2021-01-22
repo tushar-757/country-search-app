@@ -1,10 +1,10 @@
-import "./styles.css";
-import Layout from "./Layout";
+import "./App.css";
+import Home from './home';
 
 export default function App() {
   return (
     <div className="App">
-      <Layout />
+      <Home />
     </div>
   );
 }
