@@ -1,0 +1,17 @@
+.App {
+  text-align: center;
+}
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+.container {
+  background: #ffffff;
+  margin: 0 auto;
+  margin: 4rem;
+  box-shadow: 2px 2px 14px lightgrey;
+  height: 25rem;
+}
+.autocomplete {
+  margin: 0 auto;
+}
